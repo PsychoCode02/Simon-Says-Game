@@ -18,6 +18,7 @@ body {
 }
 
 .btn {
+  margin-top: 100px;
   margin: 25px;
   display: inline-block;
   height: 200px;
@@ -50,4 +51,23 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+
+@media only screen and (min-device-width: 898px) and (max-device-width: 846px) {
+
+  .container{
+    margin-top: 50%;
+    display: flex;
+  }
+  
+  }
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 1101px) {
+
+.container{
+  margin-top: 50%;
+  display: flex;
+}
+
 }

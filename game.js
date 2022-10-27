@@ -32,6 +32,15 @@ let nextSequence =  () => {
 }    
 
 
+$("body").on("click",function(){
+    if (!started){
+        $("#level-title").text("level " + level);
+        nextSequence();
+       started = true;
+   }
+});
+
+
 $("body").on("keypress",function(){
     if (!started){
         $("#level-title").text("level " + level);
